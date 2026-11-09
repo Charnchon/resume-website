@@ -83,7 +83,7 @@
     { cmd: "claude mcp add atiom-hub" },
     { out: '<span class="ok">✓</span> connected · Modules, Quizzes, QA Pools, Surveys' },
     { cmd: "git log --oneline --since=2021 | wc -l" },
-    { out: '<span class="c"># 4+ years of commits across 5 companies</span>' },
+    { out: '<span class="c"># 5+ years across 5 companies</span>' },
     { cmd: "open ./resume.pdf" },
   ];
   const prompt = '<span class="p">➜</span> <span class="hl">~</span> ';

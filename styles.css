@@ -161,8 +161,15 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .game-desc { margin: 14px 0 16px; font-size: 14.5px; color: var(--muted); }
 .game-actions { display: flex; flex-wrap: wrap; gap: 10px; }
 
+.about-title { font-size: clamp(30px, 4vw, 42px); margin-bottom: 18px; }
+.section-sub { margin-top: 12px; max-width: 620px; font-size: 17px; color: var(--muted); }
+.focus-list { margin-top: 18px; display: grid; gap: 10px; }
+.focus-list li { position: relative; padding-left: 26px; color: #d3d7e8; font-size: 15.5px; }
+.focus-list li::before { content: "→"; position: absolute; left: 0; color: var(--accent-2); font-weight: 600; }
+
 /* ---------- Stats ---------- */
-.stats { margin-top: 88px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
+.glance { margin-top: 88px; }
+.stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
 .stat { background: var(--surface-solid); padding: 28px 24px; }
 .stat b { display: block; font: 700 44px/1 var(--display); letter-spacing: -0.03em; margin-bottom: 10px;
   background: linear-gradient(120deg, #fff, var(--accent)); -webkit-background-clip: text; background-clip: text; color: transparent; }

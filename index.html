@@ -4,183 +4,325 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Charnchon Subsiri — Full Stack Developer</title>
-  <meta name="description" content="Charnchon Subsiri — Full Stack Developer with 4+ years of experience in React.js, Vue.js, Node.js and Python on AWS, building AI integrations with MCP and Claude." />
+  <meta name="description" content="Charnchon Subsiri — Full Stack Developer with 4+ years building web platforms with React, Vue, Node.js and Python on AWS. Currently building AI integrations (MCP + Claude) at Atiom." />
+  <meta property="og:title" content="Charnchon Subsiri — Full Stack Developer" />
+  <meta property="og:description" content="4+ years building web platforms. Currently building AI integrations at Atiom." />
+  <meta name="theme-color" content="#070a14" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%237c8cff'/><text x='50%' y='54%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-weight='700' font-size='28' fill='%23070a14'>CS</text></svg>" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <nav class="topnav" aria-label="Sections">
-    <div class="topnav-inner">
-      <a href="#top" class="brand">CS</a>
-      <div class="links">
-        <a href="#summary">Summary</a>
+  <div class="bg" aria-hidden="true">
+    <div class="glow g1"></div>
+    <div class="glow g2"></div>
+    <div class="grid"></div>
+  </div>
+
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#top" class="logo" aria-label="Home">CS<span>.</span></a>
+      <nav class="nav-links" aria-label="Sections">
+        <a href="#about">About</a>
         <a href="#experience">Experience</a>
-        <a href="#freelance">Freelance</a>
+        <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
-        <a href="#education">Education</a>
-      </div>
-      <button class="print-btn" type="button" onclick="window.print()">Download PDF</button>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="btn btn-sm btn-primary" type="button" data-open-resume>Resume</button>
     </div>
-  </nav>
+  </header>
 
-  <main class="page" id="top">
-    <header class="hero">
-      <h1>Charnchon Subsiri</h1>
-      <p class="role">Full Stack Developer</p>
-      <ul class="contact">
-        <li><a href="tel:+66833633344">(+66) 8 3363 3344</a></li>
-        <li><a href="mailto:Boatcharnchon@gmail.com">Boatcharnchon@gmail.com</a></li>
-        <li><a href="https://github.com/Charnchon" target="_blank" rel="noopener">GitHub: github.com/Charnchon</a></li>
-        <li><a href="https://gitlab.com/Charnchon" target="_blank" rel="noopener">GitLab: gitlab.com/Charnchon</a></li>
-      </ul>
-    </header>
-
-    <section id="summary">
-      <h2>Summary</h2>
-      <p>
-        Full Stack Developer with 4+ years of experience building web platforms with React.js, Vue.js, Node.js and
-        Python on AWS. Currently building AI integrations at Atiom, including an MCP server that lets Claude edit
-        training content directly in the product.
-      </p>
-    </section>
-
-    <section id="experience">
-      <h2>Work Experience</h2>
-
-      <article class="job">
-        <div class="job-head">
-          <h3>Atiom (Thailand) Co., Ltd. <span class="sep">|</span> <span class="title">Full Stack Developer · Full-time</span></h3>
-          <span class="date">Jun 2025 – Present</span>
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero container">
+      <div class="hero-copy">
+        <p class="eyebrow reveal"><span class="dot"></span> Building AI integrations at Atiom</p>
+        <h1 class="reveal">Charnchon<br /><span class="grad">Subsiri</span></h1>
+        <p class="lede reveal">
+          Full Stack Developer with <strong>4+ years</strong> building web platforms with React, Vue, Node.js and Python on AWS —
+          lately, the bridge between AI and real products.
+        </p>
+        <div class="cta reveal">
+          <button class="btn btn-primary" type="button" data-open-resume>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg>
+            View resume
+          </button>
+          <a class="btn btn-ghost" href="assets/Charnchon-Subsiri-Resume.pdf" download="Charnchon-Subsiri-Resume.pdf">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 21h16"/></svg>
+            Download PDF
+          </a>
         </div>
-        <ul>
-          <li>Built an MCP (Model Context Protocol) server from scratch with TypeScript and Express on AWS Fargate, so AI clients like Claude can create and edit Modules, Quizzes, QA Pools and Surveys directly in the Hub content editor.</li>
-          <li>Designed a PAT-to-JWT token exchange and an SSE-based session relay with the backend team.</li>
-          <li>Leading the architecture design for an in-Hub AI assistant that handles time-consuming admin work, such as tagging content and assigning roles.</li>
-          <li>Ran an AI-assisted content-tagging backfill for client content, with scripts to assign tags in bulk.</li>
-          <li>Developed features for the Admin Portal using React.js, and built an internal bulk action tool and Python scripts for Customer Support requests.</li>
-          <li>Wrote advanced MySQL queries for client data exports and reporting, and resolved user-reported issues with the Customer Support team.</li>
+        <ul class="socials reveal">
+          <li><a href="https://github.com/Charnchon" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://gitlab.com/Charnchon" target="_blank" rel="noopener">GitLab</a></li>
+          <li><a href="mailto:Boatcharnchon@gmail.com">Email</a></li>
         </ul>
-      </article>
-
-      <article class="job">
-        <div class="job-head">
-          <h3>VGI Digital Lab (BSS Holdings Co., Ltd.) <span class="sep">|</span> <span class="title">Full Stack Developer · Full-time</span></h3>
-          <span class="date">Nov 2023 – Apr 2025 · 1 year 6 months</span>
-        </div>
-        <ul>
-          <li>Developed customer data platform (CDP) as a web-based application using React.js and C# AWS Serverless Application Model (SAM).</li>
-          <li>Developed and maintained the VGI One Platform, a centralized media and customer data management tool used by Central Group.</li>
-          <li>Built responsive UI components with React.js, streamlining booking and admin workflows.</li>
-          <li>Developed scalable backend services using Node.js and Express, enabling key functions like media booking, user roles, and CMS features.</li>
-          <li>Integrated with the company's central digital media system (CDMS) via APIs for real-time inventory updates.</li>
-          <li>Worked in Agile sprints with QA, PMs, DE, DevOps and others, increasing delivery velocity.</li>
-        </ul>
-      </article>
-
-      <article class="job">
-        <div class="job-head">
-          <h3>ZOindy Limited (Thai Group Holdings PCL) <span class="sep">|</span> <span class="title">Software Developer · Contract</span></h3>
-          <span class="date">Jul 2024 – Dec 2024 · 6 months</span>
-        </div>
-        <ul>
-          <li>Built a labor insurance application for both client and admin management services.</li>
-          <li>Developed CMS components and dashboard using Vue.js and Nuxt.js.</li>
-          <li>Maintained CMS system with legacy services and internal APIs using AngularJS.</li>
-        </ul>
-      </article>
-
-      <article class="job">
-        <div class="job-head">
-          <h3>AppMan Co., Ltd. <span class="sep">|</span> <span class="title">Software Engineer · Full-time</span></h3>
-          <span class="date">Sep 2022 – Oct 2023 · 1 year 2 months</span>
-        </div>
-        <ul>
-          <li>Designed and maintained RPA tools and backend services for life insurance operations.</li>
-          <li>Built microservices with Node.js, Python via AWS Lambda.</li>
-          <li>Created document generation project using Python for ML OCR services.</li>
-          <li>Initialized and maintained observer server with Node.js based on message queue events.</li>
-          <li>Integrated OCR modules to auto-extract data from scanned forms, reducing manual processing using React.js and Django.</li>
-          <li>Developed billing SaaS application to integrate with other internal projects using Express.js.</li>
-        </ul>
-      </article>
-
-      <article class="job">
-        <div class="job-head">
-          <h3>Artisan Digital Asia Co., Ltd.</h3>
-        </div>
-        <div class="sub">
-          <div class="job-head">
-            <h4>Software Developer · Full-time</h4>
-            <span class="date">May 2022 – Aug 2022 · 4 months</span>
-          </div>
-          <ul>
-            <li>Developed job portal and HR systems using Vue.js, Node.js, and MySQL.</li>
-            <li>Focused on reusable UI design with Bootstrap and Tailwind CSS.</li>
-            <li>Developed HR management systems using Kotlin Spring Boot.</li>
-          </ul>
-        </div>
-        <div class="sub">
-          <div class="job-head">
-            <h4>Software Developer · Full-time · Internship</h4>
-            <span class="date">Jan 2021 – Apr 2022 · 1 year 4 months</span>
-          </div>
-          <ul>
-            <li>Completed a 16-month internship delivering multiple projects.</li>
-            <li>Built e-learning platforms and CMS backoffice using Next.js, Strapi and PostgreSQL.</li>
-            <li>Maintained job portal and HR systems using Vue.js, Node.js, and MySQL.</li>
-            <li>Participated in development process of multiple mini-projects.</li>
-          </ul>
-        </div>
-      </article>
-    </section>
-
-    <section id="freelance">
-      <h2>Freelance Experience</h2>
-      <ul>
-        <li><strong>Mobile Membership App:</strong> Developed cross-platform UI using React Native, optimizing mobile performance.</li>
-        <li><strong>Property Web App:</strong> Implemented property listing features with Vue.js and Bootstrap; maintained legacy PHP codebase.</li>
-        <li><strong>Form Admin Platform:</strong> Created administration form UIs using Vue.js and integrated with RESTful APIs for backend operations.</li>
-      </ul>
-    </section>
-
-    <section id="skills">
-      <h2>Technical Skills</h2>
-      <dl class="skills">
-        <div><dt>Languages</dt><dd>JavaScript / TypeScript, Python, C#, Kotlin, PHP, Go (learning)</dd></div>
-        <div><dt>Frontend</dt><dd>React.js, Vue.js, Next.js, Nuxt.js, AngularJS, React Native, Tailwind, Material UI, SASS, Bootstrap 5</dd></div>
-        <div><dt>Backend &amp; Database</dt><dd>Node.js, Express.js, Django, Spring Boot, Strapi, Deno, RabbitMQ, Kong Gateway, MySQL, PostgreSQL, Redis, Directus</dd></div>
-        <div><dt>AI &amp; Integration</dt><dd>MCP (Model Context Protocol), Claude / LLM APIs, REST APIs</dd></div>
-        <div><dt>Cloud &amp; Tools</dt><dd>AWS (Lambda, Fargate, SAM), Docker, Git, Playwright</dd></div>
-      </dl>
-    </section>
-
-    <section id="education">
-      <h2>Education</h2>
-      <div class="job-head">
-        <h3>Chiang Mai University</h3>
-        <span class="date">Aug 2019 – Mar 2022</span>
       </div>
-      <p>Bachelor of Science, College of Arts, Media and Technology, Digital Industry Integration</p>
-      <ul>
-        <li>3.74 GPA (first-class honors)</li>
-        <li>3 years graduation</li>
-      </ul>
+
+      <div class="terminal reveal" aria-label="Terminal animation">
+        <div class="term-bar">
+          <span></span><span></span><span></span>
+          <p>~/charnchon — zsh</p>
+        </div>
+        <pre class="term-body" id="terminal"></pre>
+      </div>
     </section>
 
-    <section id="soft-skills">
-      <h2>Soft Skills</h2>
-      <ul>
-        <li>Strong teamwork in Agile/Scrum environments</li>
-        <li>Ownership-driven and results-focused</li>
-        <li>Analytical problem solver with proactive attitude</li>
-        <li>Clear communicator with tech and non-tech stakeholders</li>
-      </ul>
+    <!-- STATS -->
+    <section class="container stats" id="about">
+      <div class="stat reveal"><b data-count="4">0</b><span>+ years shipping<br />production software</span></div>
+      <div class="stat reveal"><b data-count="5">0</b><span>companies across insurance,<br />media &amp; HR tech</span></div>
+      <div class="stat reveal"><b data-count="3.74" data-decimals="2">0</b><span>GPA, first-class honors<br />Chiang Mai University</span></div>
+      <div class="stat reveal"><b>MCP</b><span>server built from scratch<br />so Claude can edit content</span></div>
+    </section>
+
+    <!-- FEATURED -->
+    <section class="container featured reveal">
+      <div class="card spot feature-card">
+        <div>
+          <p class="kicker">Currently · Atiom (Thailand)</p>
+          <h2>Letting Claude work directly inside the product.</h2>
+          <p>
+            I built an MCP (Model Context Protocol) server from scratch with TypeScript and Express on AWS Fargate, so AI
+            clients like Claude can create and edit Modules, Quizzes, QA Pools and Surveys right in the Hub content editor —
+            with a PAT-to-JWT token exchange and an SSE-based session relay designed alongside the backend team.
+          </p>
+          <ul class="tags">
+            <li>TypeScript</li><li>Express</li><li>AWS Fargate</li><li>MCP</li><li>SSE</li><li>JWT</li>
+          </ul>
+        </div>
+        <div class="flow" aria-hidden="true">
+          <div class="node">Claude</div>
+          <div class="wire"><i></i></div>
+          <div class="node node-accent">MCP Server</div>
+          <div class="wire"><i></i></div>
+          <div class="node">Hub Editor</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="container section" id="experience">
+      <div class="section-head reveal">
+        <p class="kicker">Experience</p>
+        <h2>Where I've worked</h2>
+      </div>
+
+      <ol class="timeline">
+        <li class="job reveal">
+          <div class="job-meta">
+            <span class="when">Jun 2025 — Present</span>
+            <span class="badge live">Now</span>
+          </div>
+          <div class="card spot">
+            <h3>Full Stack Developer <span>@ Atiom (Thailand) Co., Ltd.</span></h3>
+            <p class="type">Full-time</p>
+            <ul class="bullets">
+              <li>Built an MCP server from scratch with TypeScript and Express on AWS Fargate, so AI clients like Claude can create and edit Modules, Quizzes, QA Pools and Surveys directly in the Hub content editor.</li>
+              <li>Designed a PAT-to-JWT token exchange and an SSE-based session relay with the backend team.</li>
+              <li>Leading the architecture design for an in-Hub AI assistant that handles time-consuming admin work, such as tagging content and assigning roles.</li>
+              <li class="more">Ran an AI-assisted content-tagging backfill for client content, with scripts to assign tags in bulk.</li>
+              <li class="more">Developed features for the Admin Portal using React.js, and built an internal bulk action tool and Python scripts for Customer Support requests.</li>
+              <li class="more">Wrote advanced MySQL queries for client data exports and reporting, and resolved user-reported issues with the Customer Support team.</li>
+            </ul>
+            <button class="toggle" type="button" aria-expanded="false">Show more</button>
+            <ul class="tags"><li>TypeScript</li><li>MCP</li><li>AWS Fargate</li><li>React.js</li><li>Python</li><li>MySQL</li></ul>
+          </div>
+        </li>
+
+        <li class="job reveal">
+          <div class="job-meta"><span class="when">Nov 2023 — Apr 2025</span><span class="dur">1 yr 6 mos</span></div>
+          <div class="card spot">
+            <h3>Full Stack Developer <span>@ VGI Digital Lab (BSS Holdings)</span></h3>
+            <p class="type">Full-time</p>
+            <ul class="bullets">
+              <li>Developed a customer data platform (CDP) as a web app using React.js and C# on AWS Serverless Application Model (SAM).</li>
+              <li>Developed and maintained the VGI One Platform, a centralized media and customer data management tool used by Central Group.</li>
+              <li>Built scalable backend services with Node.js and Express for media booking, user roles and CMS features.</li>
+              <li class="more">Built responsive UI components with React.js, streamlining booking and admin workflows.</li>
+              <li class="more">Integrated with the company's central digital media system (CDMS) via APIs for real-time inventory updates.</li>
+              <li class="more">Worked in Agile sprints with QA, PMs, DE, DevOps and others, increasing delivery velocity.</li>
+            </ul>
+            <button class="toggle" type="button" aria-expanded="false">Show more</button>
+            <ul class="tags"><li>React.js</li><li>C#</li><li>AWS SAM</li><li>Node.js</li><li>Express</li></ul>
+          </div>
+        </li>
+
+        <li class="job reveal">
+          <div class="job-meta"><span class="when">Jul 2024 — Dec 2024</span><span class="dur">6 mos</span></div>
+          <div class="card spot">
+            <h3>Software Developer <span>@ ZOindy Limited (Thai Group Holdings PCL)</span></h3>
+            <p class="type">Contract</p>
+            <ul class="bullets">
+              <li>Built a labor insurance application for both client and admin management services.</li>
+              <li>Developed CMS components and dashboard using Vue.js and Nuxt.js.</li>
+              <li>Maintained CMS system with legacy services and internal APIs using AngularJS.</li>
+            </ul>
+            <ul class="tags"><li>Vue.js</li><li>Nuxt.js</li><li>AngularJS</li></ul>
+          </div>
+        </li>
+
+        <li class="job reveal">
+          <div class="job-meta"><span class="when">Sep 2022 — Oct 2023</span><span class="dur">1 yr 2 mos</span></div>
+          <div class="card spot">
+            <h3>Software Engineer <span>@ AppMan Co., Ltd.</span></h3>
+            <p class="type">Full-time</p>
+            <ul class="bullets">
+              <li>Designed and maintained RPA tools and backend services for life insurance operations.</li>
+              <li>Built microservices with Node.js and Python on AWS Lambda.</li>
+              <li>Integrated OCR modules to auto-extract data from scanned forms, reducing manual processing, using React.js and Django.</li>
+              <li class="more">Created a document generation project using Python for ML OCR services.</li>
+              <li class="more">Initialized and maintained an observer server with Node.js based on message queue events.</li>
+              <li class="more">Developed a billing SaaS application integrating with other internal projects using Express.js.</li>
+            </ul>
+            <button class="toggle" type="button" aria-expanded="false">Show more</button>
+            <ul class="tags"><li>Node.js</li><li>Python</li><li>AWS Lambda</li><li>Django</li><li>React.js</li></ul>
+          </div>
+        </li>
+
+        <li class="job reveal">
+          <div class="job-meta"><span class="when">Jan 2021 — Aug 2022</span><span class="dur">1 yr 8 mos</span></div>
+          <div class="card spot">
+            <h3>Software Developer <span>@ Artisan Digital Asia Co., Ltd.</span></h3>
+            <p class="type">Full-time · May 2022 — Aug 2022 &nbsp;/&nbsp; Internship · Jan 2021 — Apr 2022</p>
+            <ul class="bullets">
+              <li>Developed job portal and HR systems using Vue.js, Node.js and MySQL, plus HR management systems with Kotlin Spring Boot.</li>
+              <li>Built e-learning platforms and a CMS backoffice using Next.js, Strapi and PostgreSQL.</li>
+              <li>Completed a 16-month internship delivering multiple projects.</li>
+              <li class="more">Focused on reusable UI design with Bootstrap and Tailwind CSS.</li>
+              <li class="more">Participated in the development process of multiple mini-projects.</li>
+            </ul>
+            <button class="toggle" type="button" aria-expanded="false">Show more</button>
+            <ul class="tags"><li>Vue.js</li><li>Next.js</li><li>Strapi</li><li>PostgreSQL</li><li>Kotlin</li><li>Spring Boot</li></ul>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="container section" id="projects">
+      <div class="section-head reveal">
+        <p class="kicker">Freelance</p>
+        <h2>Side projects for clients</h2>
+      </div>
+      <div class="cards-3">
+        <article class="card spot project reveal">
+          <div class="icon">📱</div>
+          <h3>Mobile Membership App</h3>
+          <p>Cross-platform UI built with React Native, optimized for mobile performance.</p>
+          <ul class="tags"><li>React Native</li></ul>
+        </article>
+        <article class="card spot project reveal">
+          <div class="icon">🏠</div>
+          <h3>Property Web App</h3>
+          <p>Property listing features with Vue.js and Bootstrap, plus maintenance of a legacy PHP codebase.</p>
+          <ul class="tags"><li>Vue.js</li><li>Bootstrap</li><li>PHP</li></ul>
+        </article>
+        <article class="card spot project reveal">
+          <div class="icon">🗂️</div>
+          <h3>Form Admin Platform</h3>
+          <p>Administration form UIs in Vue.js, integrated with RESTful APIs for backend operations.</p>
+          <ul class="tags"><li>Vue.js</li><li>REST APIs</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="container section" id="skills">
+      <div class="section-head reveal">
+        <p class="kicker">Toolbox</p>
+        <h2>Technical skills</h2>
+      </div>
+      <div class="skills">
+        <div class="card skill-group reveal">
+          <h3>Languages</h3>
+          <ul class="chips"><li>JavaScript</li><li>TypeScript</li><li>Python</li><li>C#</li><li>Kotlin</li><li>PHP</li><li class="learning">Go · learning</li></ul>
+        </div>
+        <div class="card skill-group reveal">
+          <h3>Frontend</h3>
+          <ul class="chips"><li>React.js</li><li>Vue.js</li><li>Next.js</li><li>Nuxt.js</li><li>AngularJS</li><li>React Native</li><li>Tailwind</li><li>Material UI</li><li>SASS</li><li>Bootstrap 5</li></ul>
+        </div>
+        <div class="card skill-group reveal">
+          <h3>Backend &amp; Database</h3>
+          <ul class="chips"><li>Node.js</li><li>Express.js</li><li>Django</li><li>Spring Boot</li><li>Strapi</li><li>Deno</li><li>RabbitMQ</li><li>Kong Gateway</li><li>MySQL</li><li>PostgreSQL</li><li>Redis</li><li>Directus</li></ul>
+        </div>
+        <div class="card skill-group reveal">
+          <h3>AI &amp; Integration</h3>
+          <ul class="chips"><li class="hot">MCP</li><li class="hot">Claude / LLM APIs</li><li>REST APIs</li></ul>
+        </div>
+        <div class="card skill-group reveal">
+          <h3>Cloud &amp; Tools</h3>
+          <ul class="chips"><li>AWS Lambda</li><li>AWS Fargate</li><li>AWS SAM</li><li>Docker</li><li>Git</li><li>Playwright</li></ul>
+        </div>
+        <div class="card skill-group reveal">
+          <h3>How I work</h3>
+          <ul class="plain">
+            <li>Strong teamwork in Agile/Scrum environments</li>
+            <li>Ownership-driven and results-focused</li>
+            <li>Analytical problem solver, proactive attitude</li>
+            <li>Clear communicator with tech &amp; non-tech stakeholders</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="container section">
+      <div class="card spot edu reveal">
+        <div>
+          <p class="kicker">Education · Aug 2019 — Mar 2022</p>
+          <h3>Chiang Mai University</h3>
+          <p>B.Sc., College of Arts, Media and Technology — Digital Industry Integration</p>
+        </div>
+        <div class="edu-badges">
+          <span><b>3.74</b> GPA</span>
+          <span>First-class honors</span>
+          <span>Graduated in 3 years</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="container section contact" id="contact">
+      <div class="card contact-card reveal">
+        <p class="kicker">Contact</p>
+        <h2>Let's build something <span class="grad">together.</span></h2>
+        <p>Open to conversations about full stack roles, AI integrations, and interesting problems.</p>
+        <div class="cta">
+          <a class="btn btn-primary" href="mailto:Boatcharnchon@gmail.com">Boatcharnchon@gmail.com</a>
+          <button class="btn btn-ghost" type="button" data-open-resume>View resume</button>
+          <a class="btn btn-ghost" href="assets/Charnchon-Subsiri-Resume.pdf" download="Charnchon-Subsiri-Resume.pdf">Download PDF</a>
+        </div>
+        <ul class="socials">
+          <li><a href="tel:+66833633344">(+66) 8 3363 3344</a></li>
+          <li><a href="https://github.com/Charnchon" target="_blank" rel="noopener">github.com/Charnchon</a></li>
+          <li><a href="https://gitlab.com/Charnchon" target="_blank" rel="noopener">gitlab.com/Charnchon</a></li>
+        </ul>
+      </div>
     </section>
   </main>
 
-  <footer class="footer">© <span id="year">2026</span> Charnchon Subsiri</footer>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <footer class="container footer">
+    <p>© <span id="year">2026</span> Charnchon Subsiri</p>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
+  <!-- RESUME VIEWER -->
+  <dialog class="viewer" id="resume-dialog" aria-label="Resume">
+    <div class="viewer-bar">
+      <p>Resume · Charnchon Subsiri</p>
+      <div class="viewer-actions">
+        <a class="btn btn-sm btn-ghost" href="assets/Charnchon-Subsiri-Resume.pdf" target="_blank" rel="noopener">Open in new tab</a>
+        <a class="btn btn-sm btn-primary" href="assets/Charnchon-Subsiri-Resume.pdf" download="Charnchon-Subsiri-Resume.pdf">Download</a>
+        <button class="close" type="button" aria-label="Close" data-close-resume>✕</button>
+      </div>
+    </div>
+    <iframe title="Resume PDF" data-src="assets/Charnchon-Subsiri-Resume.pdf#view=FitH"></iframe>
+  </dialog>
+
+  <script src="script.js"></script>
 </body>
 </html>
